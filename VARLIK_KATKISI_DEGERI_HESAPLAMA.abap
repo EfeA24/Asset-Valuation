@@ -18,10 +18,9 @@ DATA: lt_anlc TYPE TABLE OF ty_anlc,
       lv_toplam_katkı TYPE ANLC-NBUCH,
       lv_toplam_amortisman TYPE ANLC-NVERM.
 
-PARAMETERS: p_muhasebe_yili TYPE ANLC-GJAHR DEFAULT sy-datum, "Muhasebe Yılı
-            p_amortisman_grubu TYPE ANLC-AFABG DEFAULT '', "Amortisman Grubu
-            p_sermaye_bolgesi TYPE ANLC-SLBNM DEFAULT ''. "Sermaye Bölgesi
-
+PARAMETERS: p_muhasebe_yili TYPE ANLC-GJAHR DEFAULT sy-datum,
+            p_amortisman_grubu TYPE ANLC-AFABG DEFAULT '',
+            p_sermaye_bolgesi TYPE ANLC-SLBNM DEFAULT ''.
 START-OF-SELECTION.
   SELECT anln1 gjahr afabg slbnm nbuch nverm nreav
     FROM anlc
