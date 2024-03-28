@@ -43,7 +43,7 @@ START-OF-SELECTION.
              'Defter Değeri:', ls_anlc-nbuch,
              'Değerleme:', ls_anlc-nverm,
              'Değerleme Sonrası Defter Değeri:', ls_anlc-nreav,
-             'Varlıkların ŞirketDeğerine Katkısı:', lv_varlik_katkisi.
+             'Varlıkların Şirket Değerine Katkısı:', lv_varlik_katkisi.
     ENDLOOP.
 
     lv_toplam_katkı = lv_toplam_varlik_degeri - lv_toplam_amortisman.
